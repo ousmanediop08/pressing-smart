@@ -48,6 +48,7 @@ def subscribe(request):
         paiement=request.POST.get('paiement')
         choice=request.POST.get('choice')
         date_rv=request.POST.get('date_rv')
+        commande=Subscribe.objects.create(name=name,adress=adress,email=email,phone=phone,paiement=paiement,choice=choice,date_rv=date_rv)
 
         #form = SubscribeForm(request.POST)
         #form.save()
