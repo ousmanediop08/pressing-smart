@@ -30,7 +30,7 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SECRET_KEY = 'django-insecure-r+tyxuk78y782))9vq9#eawxyedh_@iis3&djnf7=&jh#)t%ni'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
 ALLOWED_HOSTS = ['pressing-smart.herokuapp.com','localhost', '127.0.0.1','https://pressing-smart.herokuapp.com/']
 

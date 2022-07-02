@@ -80,7 +80,7 @@ def subscribe(request):
 # Create your views here.
 #DataFlair #Send Email
 
-
+#https://projectsplaza.com/how-to-save-form-data-in-database-in-django/
 
 
 
