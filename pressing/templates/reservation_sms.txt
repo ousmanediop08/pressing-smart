@@ -1,0 +1,23 @@
+<body style="background-color: #d3d3d3;">
+    <style>
+        @import url('https://fonts.googleapis.com/css/css?family=Roboto');
+    </style>
+    <br><br>
+    <center>
+        <div style="background-color:#fff; width:70%; height: 600px; border-radius: 5px; margin-top: 50px; font-family: roboto;">
+            <br><br>
+            <p style="font-size:22px;">Bonjour, <a style="color:#0d6efd;">{{name}}</a></p>
+            <p style="font-size:15px;">Nous avons recu votre demande avec votre adresse mail: <a style="color:#0d6efd; text-decoration: none;">{{email}}</a></p>
+            <p style="font-size:15px;">Vous avez optez pour le service de pressing <span style="color:#0d6efd;">{{choice}}</span></p>
+
+            <hr style="color:#0d6efd; width:80%">
+            <p style="font-size:15px">Nous allons prendre en charge votre demande le plus rapidement possible et nos livreurs passeront à votre domicile.</p>
+            <br><br>
+            <p style="font-size: 30px; color:#0d6efd;">Merci !</p>
+            <br><br>
+        </div>
+    </center>
+    <br><br><br><br><br><br><br><br><br><br>
+
+
+</body>

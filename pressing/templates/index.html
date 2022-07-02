@@ -1,0 +1,865 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>Pressing Smart Corporation</title>
+  <meta content="" name="description">
+
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link href="{% static 'assets/img/logo 2.png' %}" rel="icon">
+  <link href="{% static 'assets/img/logo 2.png' %}" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Nunito:300,300i,400,400i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="{% static 'assets/vendor/aos/aos.css' %}" rel="stylesheet">
+  <link href="{% static 'assets/vendor/bootstrap/css/bootstrap.min.css' %}" rel="stylesheet">
+  <link href="{% static 'assets/vendor/bootstrap-icons/bootstrap-icons.css' %}" rel="stylesheet">
+  <link href="{% static 'assets/vendor/glightbox/css/glightbox.min.css' %}" rel="stylesheet">
+  <link href="{% static 'assets/vendor/remixicon/remixicon.css' %}" rel="stylesheet">
+  <link href="{% static 'assets/vendor/swiper/swiper-bundle.min.css' %}" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link href="{% static 'assets/css/style.css' %}" rel="stylesheet">
+
+  <!-- =======================================================
+  * Template Name: FlexStart - v1.9.0
+  * Template URL: https://bootstrapmade.com/flexstart-bootstrap-startup-template/
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
+</head>
+
+<body>
+
+  <!-- ======= Header ======= -->
+  <header id="header" class="header fixed-top">
+    <div class="container-fluid container-xl d-flex align-items-center justify-content-between">
+
+      <a href="{% url 'home' %}" class="logo d-flex align-items-center">
+        <img src="{% static 'assets/img/logo 2.png' %}" alt="">
+        <span>Pressing Smart</span>
+      </a>
+
+      <nav id="navbar" class="navbar">
+        <ul>
+          <li><a class="nav-link scrollto active" href="/#hero">Home</a></li>
+          <li><a class="nav-link scrollto" href="/#about">About</a></li>
+          <li><a class="nav-link scrollto" href="/#portfolio">Nos valeurs</a></li>
+          <li><a class="nav-link scrollto" href="/#team">Services</a></li>
+          <li><a class="nav-link scrollto" href="/#services">Avantages</a></li>
+          <li><a class="nav-link scrollto" href="/#pricing">Tarif</a></li>
+         <!-- <li class="dropdown"><a href="#"><span>Drop Down</span> <i class="bi bi-chevron-down"></i></a>
+            <ul>
+              <li><a href="#">Drop Down 1</a></li>
+              <li class="dropdown"><a href="#"><span>Deep Drop Down</span> <i class="bi bi-chevron-right"></i></a>
+                <ul>
+                  <li><a href="#">Deep Drop Down 1</a></li>
+                  <li><a href="#">Deep Drop Down 2</a></li>
+                  <li><a href="#">Deep Drop Down 3</a></li>
+                  <li><a href="#">Deep Drop Down 4</a></li>
+                  <li><a href="#">Deep Drop Down 5</a></li>
+                </ul>
+              </li>
+              <li><a href="#">Drop Down 2</a></li>
+              <li><a href="#">Drop Down 3</a></li>
+              <li><a href="#">Drop Down 4</a></li>
+            </ul>
+          </li> -->
+          <li><a class="nav-link scrollto" href="/#contact">Contact</a></li>
+          <li><a class="getstarted scrollto" href="{% url 'commande' %}">Commander</a></li>
+        </ul>
+        <i class="bi bi-list mobile-nav-toggle"></i>
+      </nav><!-- .navbar -->
+
+    </div>
+  </header><!-- End Header -->
+
+  <!-- ======= Hero Section ======= -->
+  <section id="hero" class="hero d-flex align-items-center">
+
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-6 d-flex flex-column justify-content-center">
+          <h1 data-aos="fade-up">Donnez une seconde vie à vos vêtements !</h1>
+          <h2 data-aos="fade-up" data-aos-delay="400">Nous ramassons, nettoyons et livrons
+             votre linge chez vous en 24 heures.</h2>
+          <div data-aos="fade-up" data-aos-delay="600">
+            <div class="text-center text-lg-start">
+              <a href="{% url 'commande' %}" class="btn-get-started scrollto d-inline-flex align-items-center justify-content-center align-self-center">
+                <span>Commander</span>
+                <i class="bi bi-arrow-right"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-6 hero-img" data-aos="zoom-out" data-aos-delay="200">
+          <img src="{% static 'assets/img/bg2-1.png' %}" class="img-fluid" alt="">
+        </div>
+      </div>
+    </div>
+
+  </section><!-- End Hero -->
+
+  <main id="main">
+    <!-- ======= About Section ======= -->
+    <section id="about" class="about">
+
+      <div class="container" data-aos="fade-up">
+        <div class="row gx-0">
+
+          <div class="col-lg-6 d-flex flex-column justify-content-center" data-aos="fade-up" data-aos-delay="200">
+            <div class="content">
+              <h3>Qui sommes nous ?</h3>
+              <h2>Blanchisserie, nettoyage à sec, repassage et livraison en moins de 24 heures.</h2>
+              <p>
+                En 2022, Pressing Smart a été fondée pour s'occuper du linge des particuliers en assurant toute la chaine logistique de bout en bout en quelques clics.
+                <br>Nous apportons une réponse à tous les gens qui n’ont pas la chance de finir 
+                le travail avant 19h et n’ont pas le temps d’aller au pressing.
+              </p>
+              
+            </div>
+          </div>
+
+          <div class="col-lg-6 d-flex align-items-center" data-aos="zoom-out" data-aos-delay="200">
+            <img src="{% static 'assets/img/about1.jpg' %}" class="img-fluid" alt="">
+          </div>
+
+        </div>
+      </div>
+
+    </section><!-- End About Section -->
+
+    <!-- ======= Values Section ======= -->
+    <section id="portfolio" class="values">
+
+      <div class="container" data-aos="fade-up">
+
+        <header class="section-header">
+          <h2>Nos valeurs</h2>
+          <p>Le meilleur service de pressing à domicile</p>
+        </header>
+
+        <div class="row">
+
+          <div class="col-lg-4" data-aos="fade-up" data-aos-delay="200">
+            <div class="box">
+              <img src="{% static 'assets/img/values1.png' %}" class="img-fluid" alt="">
+              <h3>Fiable</h3>
+              <p>Pour être au plus proche de nos clients, nous cherchons à construire des relations humaines authentiques et durables parce que chaque client est unique.</p>
+            </div>
+          </div>
+
+          <div class="col-lg-4 mt-4 mt-lg-0" data-aos="fade-up" data-aos-delay="400">
+            <div class="box">
+              <img src="{% static 'assets/img/values2.png' %}" class="img-fluid" alt="">
+              <h3>Pratique</h3>
+              <p>Nous savons que votre temps est précieux. C’est pourquoi nous avons conçu un service simple et rapide. Vous faites une réservation en quelques clics, on collecte votre linge et on vous le livre propre en moins de 24h.</p>
+            </div>
+          </div>
+
+          <div class="col-lg-4 mt-4 mt-lg-0" data-aos="fade-up" data-aos-delay="600">
+            <div class="box">
+              <img src="{% static 'assets/img/values3.png' %}" class="img-fluid" alt="">
+              <h3>Qualité</h3>
+              <p>Pour un service de qualité, nous traitons chaque commande individuellement grâce à des process optimisés et des machines de qualité.</p>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+
+    </section><!-- End Values Section -->
+
+    <!-- ======= Counts Section ======= -->
+    <section id="counts" class="counts">
+      <div class="container" data-aos="fade-up">
+
+        <div class="row gy-4">
+
+          <div class="col-lg-3 col-md-6">
+            <div class="count-box">
+              <i class="bi bi-emoji-smile" style="color: #15be56;"></i>
+              <div>
+                <span data-purecounter-start="0" data-purecounter-end="14" data-purecounter-duration="1" class="purecounter"></span>
+                <p>Clients</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6">
+            <div class="count-box">
+              <i class="bi bi-journal-richtext" style="color: #ee6c20;"></i>
+              <div>
+                <span data-purecounter-start="0" data-purecounter-end="24" data-purecounter-duration="1" class="purecounter"></span>
+                <p>Délai de livraison</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6">
+            <div class="count-box">
+              <i class="bi bi-basket"></i>
+              <div>
+                <span data-purecounter-start="0" data-purecounter-end="90" data-purecounter-duration="1" class="purecounter"></span>
+                <p>Kg. de linge traités</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6">
+            <div class="count-box">
+              <i class="bi bi-box-seam" style="color: #bb0852;"></i>
+              <div>
+                <span data-purecounter-start="0" data-purecounter-end="14" data-purecounter-duration="1" class="purecounter"></span>
+                <p>Commandes traitées</p>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section><!-- End Counts Section -->
+
+    <!-- ======= Features Section ======= -->
+    <section id="team" class="features">
+
+      <div class="container" data-aos="fade-up">
+
+        <header class="section-header">
+          <h2>Service à  la demande</h2>
+          <p>Offres diversifiées </p>
+        </header>
+
+        <div class="row">
+
+          <div class="col-lg-6">
+            <img src="{% static 'assets/img/test.jpg' %}" class="img-fluid" alt="">
+          </div>
+
+          <div class="col-lg-6 mt-5 mt-lg-0 d-flex">
+            <div class="row align-self-center gy-4">
+
+              <div class="col-md-6" data-aos="zoom-out" data-aos-delay="200">
+                <div class="feature-box d-flex align-items-center">
+                  <i class="bi bi-check"></i>
+                  <h3>Collecte</h3>
+                </div>
+              </div>
+
+              <div class="col-md-6" data-aos="zoom-out" data-aos-delay="300">
+                <div class="feature-box d-flex align-items-center">
+                  <i class="bi bi-check"></i>
+                  <h3>Lavage</h3>
+                </div>
+              </div>
+
+              <div class="col-md-6" data-aos="zoom-out" data-aos-delay="400">
+                <div class="feature-box d-flex align-items-center">
+                  <i class="bi bi-check"></i>
+                  <h3>Nettoyage à sec</h3>
+                </div>
+              </div>
+
+              <div class="col-md-6" data-aos="zoom-out" data-aos-delay="500">
+                <div class="feature-box d-flex align-items-center">
+                  <i class="bi bi-check"></i>
+                  <h3>Repassage</h3>
+                </div>
+              </div>
+
+              <div class="col-md-6" data-aos="zoom-out" data-aos-delay="600">
+                <div class="feature-box d-flex align-items-center">
+                  <i class="bi bi-check"></i>
+                  <h3>Blanchisserie</h3>
+                </div>
+              </div>
+
+              <div class="col-md-6" data-aos="zoom-out" data-aos-delay="700">
+                <div class="feature-box d-flex align-items-center">
+                  <i class="bi bi-check"></i>
+                  <h3>Livraison à domicile</h3>
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+        </div> <!-- / row -->
+
+        <!-- Feature Tabs rajouter dans le futur -->
+        <!-- End Feature Tabs -->
+
+        <!-- Feature Icons -->
+        <!-- End Feature Icons -->
+
+      </div>
+
+    </section><!-- End Features Section -->
+
+    <!-- ======= Services Section ======= -->
+    <section id="services" class="services">
+
+      <div class="container" data-aos="fade-up">
+
+        <header class="section-header">
+          <h2>Avantages</h2>
+          <p>Pourquoi choisir Pressing Smart</p>
+        </header>
+
+        <div class="row gy-4">
+
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
+            <div class="service-box blue">
+              <i class="ri-shopping-cart-2-line icon"></i>
+              <h3>Réservation</h3>
+              <p>En quelques clics, vous pouvez faire une demande de collecte de votre linge.</p>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
+            <div class="service-box orange">
+              <i class="ri-truck-line icon"></i>
+              <h3>Collecte & Livraison</h3>
+              <p>Notre livreur se présente au jour et à l'horaire convenu pour récupérer et livrer vos vêtements.</p>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="400">
+            <div class="service-box green">
+              <i class="ri-24-hours-fill icon"></i>
+              <h3>Respect Du Délai</h3>
+              <p>Votre linge propre est livré chez vous en 24 heures (Service Express)</p>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="500">
+            <div class="service-box red">
+              <i class="ri-gift-line icon"></i>
+              <h3>Offres attractifs</h3>
+              <p>Hebdomadaire ou sur demande - choisissez le plan qui vous convient.</p>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="600">
+            <div class="service-box purple">
+              <i class="ri-user-voice-fill icon"></i>
+              <h3>Support Client</h3>
+              <p>Service client disponible pour toute assistance au besoin.</p>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="700">
+            <div class="service-box pink">
+              <i class="ri-money-dollar-box-line icon"></i>
+              <h3>Paiement</h3>
+              <p>Paiement par Orange Money, Wave, Free ou en cash à réception de votre facture par mail.</p>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+
+    </section><!-- End Services Section -->
+
+    <!-- ======= Pricing Section ======= -->
+    <section id="pricing" class="pricing">
+
+      <div class="container" data-aos="fade-up">
+
+        <header class="section-header">
+          <h2>Prix</h2>
+          <p>Découvrez nos tarifs</p>
+        </header>
+
+        <div class="row gy-4" data-aos="fade-left">
+
+          <div class="col-lg-4 col-md-6" data-aos="zoom-in" data-aos-delay="100">
+            <div class="box">
+              <h3 style="color: #ff901c;;">Simple</h3>
+              <div class="price">400<span>FCFA / Kg</span></div>
+              <img src="{% static 'assets/img/simple.png' %}" class="img-fluid" alt="">
+              <ul>
+                <li>Poids supérieur à 3 Kilo</li>
+                <li>Collecte</li>
+                <li>Nettoyage à sec</li>
+                <li>Livraison</li>
+                <li>Délai de 24H</li>
+                <li style="color: #2a9d8f; font-weight: bold;"> Frais de livraison 1500 Fr</li>                
+              </ul>
+           <!--   <a href="#" class="btn-buy">Buy Now</a> -->
+            </div>
+          </div>
+
+
+          <div class="col-lg-4 col-md-6" data-aos="zoom-in" data-aos-delay="300">
+            <div class="box">
+              <h3 style="color: #134074;">Complet</h3>
+              <div class="price">800<span>FCFA / Kg</span></div>
+              <img src="{% static 'assets/img/complet.png' %}" class="img-fluid" alt="">
+              <ul>
+                <li>Poids supérieur à 3 Kilo</li>
+                <li>Collecte</li>
+                <li>Nettoyage à sec</li>
+                <li>Repassage</li>
+                <li>Livraison</li>
+                <li>Délai de 24H</li>
+                <li style="color: #2a9d8f; font-weight: bold;"> Frais de livraison 1500 Fr</li>
+              </ul>
+           <!--   <a href="#" class="btn-buy">Buy Now</a> -->
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6" data-aos="zoom-in" data-aos-delay="200">
+            <div class="box">
+              <span class="featured">Premium</span>
+              <h3 style="color: #65c600;">Solo</h3>
+              <div class="price">Unite</div>
+              <img src="{% static 'assets/img/delivery.png' %}" class="img-fluid" alt="">
+              <ul>
+                <li>Poids inférieur à 3 Kilo</li>
+                <li>Collecte gratuite</li>
+                <li>Nettoyage à sec</li>
+                <li>Repassage</li>
+                <li>Livraison gratuite</li>
+                <li>Délai de 24H</li>
+                <li style="color: #2a9d8f; font-weight: bold;"> Tenues spécifiques</li>
+              </ul>
+           <!--   <a href="#" class="btn-buy">Buy Now</a> -->
+            </div>
+          </div>
+
+
+        </div>
+
+      </div>
+
+    </section><!-- End Pricing Section 
+
+    <!-- ======= F.A.Q Section ======= -->
+    <section id="faq" class="faq">
+
+      <div class="container" data-aos="fade-up">
+
+        <header class="section-header">
+          <h2>F.A.Q</h2>
+          <p>Questions Frequentes</p>
+        </header>
+
+        <div class="row">
+          <div class="col-lg-6">
+            <!-- F.A.Q List 1-->
+            <div class="accordion accordion-flush" id="faqlist1">
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq-content-1">
+                    La collecte et la livraison de mon linge est elle gratuite?
+                  </button>
+                </h2>
+                <div id="faq-content-1" class="accordion-collapse collapse" data-bs-parent="#faqlist1">
+                  <div class="accordion-body">
+                    Des frais de livraison vous seront facturés dans les 3 cas suivants :
+
+                    - Si vous votre commande n’atteint pas le seuil de gratuité qui est de 10 Kg
+
+                    - Si vous êtes absent lors du passage de notre livreur pour collecter et/ou livrer votre commande
+
+                    - Si vous annulez ou reportez la collecte ou livraison moins d’une heure avant le créneau planifié 
+                
+                    Afin d’éviter tout malentendu, contactez nous le plus rapidement possible pour signaler un report ou une annulation.
+
+                    A partir de 10Kg, les frais de récupération et de livraison de votre linge vous sont offerts.
+                  </div>
+                </div>
+              </div>
+
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq-content-2">
+                    Quels sont vos horaires de collecte et de livraison ?
+                  </button>
+                </h2>
+                <div id="faq-content-2" class="accordion-collapse collapse" data-bs-parent="#faqlist1">
+                  <div class="accordion-body">
+                  Nous récupérons votre linge du lundi au samedi de 08h à 18h et nous vous le ramenons de 15h à 19h
+                  </div>
+                </div>
+              </div>
+
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq-content-3">
+                    Paiement de la commande ?
+                  </button>
+                </h2>
+                <div id="faq-content-3" class="accordion-collapse collapse" data-bs-parent="#faqlist1">
+                  <div class="accordion-body">
+                  Après la récupération de votre linge, votre facture vous sera envoyée par mail ou par Whats App. 
+                  A la réception du linge,   vous devrez procéder au paiment soit en espèces, par Orange Money ou par Wave.
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+          <div class="col-lg-6">
+
+            <!-- F.A.Q List 2-->
+            <div class="accordion accordion-flush" id="faqlist2">
+
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq2-content-1">
+                    Pourrais je changer la date de réservation ?
+                  </button>
+                </h2>
+                <div id="faq2-content-1" class="accordion-collapse collapse" data-bs-parent="#faqlist2">
+                  <div class="accordion-body">
+                    Oui il est bien possible de reprogrammer la date de collecte ou de restitution de votre linge mais il faudra nous contacter par appel téléphonique
+                    ou par Whats app afin d'assurer une bonne prise en charge de votre demande.
+                  </div>
+                </div>
+              </div>
+
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq2-content-2">
+                    Comment vous contactez ?
+                  </button>
+                </h2>
+                <div id="faq2-content-2" class="accordion-collapse collapse" data-bs-parent="#faqlist2">
+                  <div class="accordion-body">
+                    Notre site et l'application ont été développés afin de répondre à tous vos besoins : réservation, paiement, FAQ , annulation...
+                    Si malgré tout des questions subsistent et que vous souhaitez nous parler, n'hésitez pas à nous adresser un mail ou à nous contacter au 77 147 42 67, nous nous ferons un plaisir de vous rappeler ou de répondre à votre SMS ou WhatsApp
+                  </div>
+                </div>
+              </div>
+
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq2-content-3">
+                    Comment connaitre le poids de mon linge ?
+                  </button>
+                </h2>
+                <div id="faq2-content-3" class="accordion-collapse collapse" data-bs-parent="#faqlist2">
+                  <div class="accordion-body">
+                    Votre linge sera pesé avec une balance professionnelle à la récupératuion de celle-ci chez vous.
+                    Lors de la préparation de votre commande, nous vous demandons de mettre votre linge dans un sac quelconque.
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+
+    </section><!-- End F.A.Q Section -->
+
+    <!-- ======= Portfolio Section ======= -->
+  <!-- End Portfolio Section -->
+
+    <!-- ======= Testimonials Section ======= -->
+    <section id="testimonials" class="testimonials">
+
+      <div class="container" data-aos="fade-up">
+
+        <header class="section-header">
+          <h2>Retour d'expérience</h2>
+          <p>Pressing à domicile : Nos clients témoignent</p>
+        </header>
+
+        <div class="testimonials-slider swiper" data-aos="fade-up" data-aos-delay="200">
+          <div class="swiper-wrapper">
+
+            <div class="swiper-slide">
+              <div class="testimonial-item">
+                <div class="stars">
+                  <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                </div>
+                <p>
+                  "Le rapport qualité prix est très bon, personnel très gentil, tout est fait en temps et en heure je recommande !!"
+                </p>
+                <div class="profile mt-auto">
+                  <img src="{% static 'assets/img/testimonials/customer.png' %}" class="testimonial-img" alt="">
+                  <h3>Mouhamed Diop</h3>
+               <!--   <h4>Ceo &amp; Founder</h4> -->
+                </div>
+              </div>
+            </div><!-- End testimonial item -->
+
+            <div class="swiper-slide">
+              <div class="testimonial-item">
+                <div class="stars">
+                  <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                </div>
+                <p>
+               "Super concept et super service. Je ne peux plus m'en passer. Je recommande à tout ceux qui en ont assez de voir du linge étendu tous les jours. Surtout les parents !"
+                </p>
+                <div class="profile mt-auto">
+                  <img src="{% static 'assets/img/testimonials/customer.png' %}" class="testimonial-img" alt="">
+                  <h3>Khadija Diaw</h3>
+                  <!--<h4>Designer</h4> -->
+                </div>
+              </div>
+            </div><!-- End testimonial item -->
+
+            <div class="swiper-slide">
+              <div class="testimonial-item">
+                <div class="stars">
+                  <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                </div>
+                <p>
+                "J'apprecie beaucoup le service Pressing Smart, toujours très efficace, une équipe au top et une structure 100% sénégalaise. Je recommande"
+                </p>
+                <div class="profile mt-auto">
+                  <img src="{% static 'assets/img/testimonials/customer.png' %}" class="testimonial-img" alt="">
+                  <h3>Absa</h3>
+                 <!-- <h4>Store Owner</h4> -->
+                </div>
+              </div>
+            </div><!-- End testimonial item -->
+
+            <div class="swiper-slide">
+              <div class="testimonial-item">
+                <div class="stars">
+                  <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                </div>
+                <p>
+                "Qualité du service au top. Tout ce dont j'avais besoin et quel gain de temps ! Merci"
+                </p>
+                <div class="profile mt-auto">
+                  <img src="{% static 'assets/img/testimonials/customer.png' %}" class="testimonial-img" alt="">
+                  <h3>Mame Khady</h3>
+               <!--   <h4>Freelancer</h4> -->
+                </div>
+              </div>
+            </div><!-- End testimonial item -->
+
+
+          </div>
+          <div class="swiper-pagination"></div>
+        </div>
+
+      </div>
+
+    </section><!-- End Testimonials Section -->
+
+    <!-- ======= Team Section à rajouter dans le futur ======= -->
+<!-- End Team Section -->
+
+    <!-- ======= Clients Section ======= -->
+ <!--   <section id="clients" class="clients">
+
+      <div class="container" data-aos="fade-up">
+
+        <header class="section-header">
+          <h2>Nos Clients</h2>
+          <p>Ils nous font confiance</p>
+        </header>
+
+        <div class="clients-slider swiper">
+          <div class="swiper-wrapper align-items-center">
+            <div class="swiper-slide"><img src="assets/img/clients/client-1.png" class="img-fluid" alt=""></div>
+            <div class="swiper-slide"><img src="assets/img/clients/client-2.png" class="img-fluid" alt=""></div>
+            <div class="swiper-slide"><img src="assets/img/clients/client-3.png" class="img-fluid" alt=""></div>
+            <div class="swiper-slide"><img src="assets/img/clients/client-4.png" class="img-fluid" alt=""></div>
+            <div class="swiper-slide"><img src="assets/img/clients/client-5.png" class="img-fluid" alt=""></div>
+            <div class="swiper-slide"><img src="assets/img/clients/client-6.png" class="img-fluid" alt=""></div>
+            <div class="swiper-slide"><img src="assets/img/clients/client-7.png" class="img-fluid" alt=""></div>
+            <div class="swiper-slide"><img src="assets/img/clients/client-8.png" class="img-fluid" alt=""></div>
+          </div>
+          <div class="swiper-pagination"></div>
+        </div>
+      </div>
+
+    </section><!-- End Clients Section -->
+
+     -->
+
+    <!-- ======= Recent Blog Posts Section ======= -->
+ <!-- End Recent Blog Posts Section -->
+
+    <!-- ======= Contact Section ======= -->
+    <section id="contact" class="contact">
+
+      <div class="container" data-aos="fade-up">
+
+        <header class="section-header">
+          <h2>Contact</h2>
+          <p>Contactez Nous</p>
+        </header>
+
+        <div class="row gy-4">
+
+          <div class="col-lg-6">
+
+            <div class="row gy-4">
+              <div class="col-md-6">
+                <div class="info-box">
+                  <i class="bi bi-geo-alt"></i>
+                  <h3>Adresse</h3>
+                  <p>Castor Villa 1048, Dakar<br>Senegal BP 18200</p>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="info-box">
+                  <i class="bi bi-telephone"></i>
+                  <h3>Telephone</h3>
+                  <p>+221 77 147 42 67<br>+221 77 816 19 12</p>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="info-box">
+                  <i class="bi bi-envelope"></i>
+                  <h3>Email</h3>
+                 <!-- <p>info@example.com<br>contact@example.com</p> -->
+                 <p>smartpressing2022@gmail.com</p>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="info-box">
+                  <i class="bi bi-clock"></i>
+                  <h3>Horaires disponibles</h3>
+                  <p>Lundi - Dimanche<br>9:00 H - 18:00 H</p>
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+          <div class="col-lg-6">
+            <form method="post" class="php-email-form">
+              {% csrf_token %}
+              <div class="row gy-4">
+
+                <div class="col-md-6">
+                  <input type="text" name="name" class="form-control" placeholder="Prenom & Nom" required>
+                </div>
+
+                <div class="col-md-6 ">
+                  <input type="email" class="form-control" name="email" placeholder="Email" required>
+                </div>
+
+                <div class="col-md-12">
+                  <input type="text" class="form-control" name="subject" placeholder="Objet" required>
+                </div>
+
+                <div class="col-md-12">
+                  <textarea class="form-control" name="message" rows="6" placeholder="Message" required></textarea>
+                </div>
+
+                <div class="col-md-12 text-center">
+                  <button type="submit">Envoyer</button>
+                </div>
+
+              </div>
+            </form>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </section><!-- End Contact Section -->
+
+  </main><!-- End #main -->
+
+  <!-- ======= Footer ======= -->
+  <footer id="footer" class="footer">
+
+   <!-- <div class="footer-newsletter">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-lg-12 text-center">
+            <h4>Newsletter</h4>
+            <p>Inscrivez vous à notre Newsletter et recevez les meilleurs offres et promo</p>
+          </div>
+          <div class="col-lg-6">
+            <form action="" method="post">
+              <input type="email" name="email"><input type="submit" value="Souscrire">
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>-->
+
+    <div class="footer-top">
+      <div class="container">
+        <div class="row gy-4">
+          <div class="col-lg-5 col-md-12 footer-info">
+            <a href="index.html" class="logo d-flex align-items-center">
+              <img src="{% static 'assets/img/logo.png' %}" alt="">
+              <span>Pressing Smart</span>
+            </a>
+            <p>Pressing Smart répond à un besoin d’instantanéité de plus en plus recherché. 
+              En queqlues clics, vous pouvez commander votre pressing et vos vêtements vous seront restitués en 24h.</p>
+            <div class="social-links mt-3">
+              <a href="#" class="twitter"><i class="bi bi-twitter"></i></a>
+              <a href="#" class="facebook"><i class="bi bi-facebook"></i></a>
+              <a href="#" class="instagram"><i class="bi bi-instagram"></i></a>
+              <a href="#" class="linkedin"><i class="bi bi-linkedin"></i></a>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-12 footer-contact text-center text-md-start">
+            <h4>Contactez Nous</h4>
+            <p>
+              Castors<br>
+              Dakar, BP 10100<br>
+              Senegal <br><br>
+              <strong>Telephone:</strong> +221 77 147 42 67<br>
+              <strong>Email:</strong> smartpressing2022@gmail.com<br>
+            </p>
+
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="copyright">
+        &copy; Copyright <strong><span>Pressing Smart</span></strong>. All Rights Reserved
+      </div>
+      <div class="credits">
+        <!-- All the links in the footer should remain intact. -->
+        <!-- You can delete the links only if you purchased the pro version. -->
+        <!-- Licensing information: https://bootstrapmade.com/license/ -->
+        <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/flexstart-bootstrap-startup-template/ -->
+        <!--Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>  -->
+      </div>
+    </div>
+  </footer><!-- End Footer -->
+
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Vendor JS Files -->
+  <script src="{% static 'assets/vendor/purecounter/purecounter.js' %}"></script>
+  <script src="{% static 'assets/vendor/aos/aos.js' %}"></script>
+  <script src="{% static 'assets/vendor/bootstrap/js/bootstrap.bundle.min.js' %}"></script>
+  <script src="{% static 'assets/vendor/glightbox/js/glightbox.min.js' %}"></script>
+  <script src="{% static 'assets/vendor/isotope-layout/isotope.pkgd.min.js' %}"></script>
+  <script src="{% static 'assets/vendor/swiper/swiper-bundle.min.js' %}"></script>
+  <!-- <script src="{% static 'assets/vendor/php-email-form/validate.js' %}"></script>-->
+
+  <!-- Template Main JS File -->
+  <script src="{% static 'assets/js/main.js' %}"></script>
+
+</body>
+
+</html>
